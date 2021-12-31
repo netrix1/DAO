@@ -19,7 +19,21 @@ echo $usuario;*/
 //echo json_encode($busca);
 
 //carrega uma usuario usando login e senha
-$usuario = new Usuario();
+/*$usuario = new Usuario();
 $usuario->login("jose","123456");
+echo $usuario;*/
+
+//insere um novo usuario
+//$aluno = new Usuario();
+//$aluno->setDeslogin("aluno");
+//$aluno->setDessenha("@#$%");
+//$aluno->insert();
+//echo $aluno;
+
+//Atualiza um novo usuario
+$usuario = new Usuario();
+$usuario->loadById(9);
+$usuario->update("professor","pr0f3s0r");
+
 echo $usuario;
 ?>
